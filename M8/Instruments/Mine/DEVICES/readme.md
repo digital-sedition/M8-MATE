@@ -1,0 +1,5 @@
+This folder is for 'instruments' that actually map to MIDI devices.  ...yup, they're just MIDI mappings, which are easy as pie to setup and may take as long to find and load as it would to just create them on demand...
+
+...*aaaaaaaaand* the whole purpose of these mappings for me was to pattern change Elektrons, which don't deal with that too well.  Basically, Elektrons need to be told to pattern change by external, non-Elektron MIDI devices (via a Program Change signal) *before* their current pattern finishes; sending that signal at the point the next pattern starts means the switch occurs after *that*.  You could obviously work around this by just sending the signals in a phrase/chain before you need it, but you really need to be on top of your game: unless you're using a channel dedicated to pattern changing, it could get messy...and if you are, you're muting an entire channel.
+
+...the other issue I had is that this isn't an ideal replacement for Song Mode; muting tracks within Elektron patterns needs signalling via MIDI too.  This then becomes too much - especially with multiple devices - to do via MIDI.
