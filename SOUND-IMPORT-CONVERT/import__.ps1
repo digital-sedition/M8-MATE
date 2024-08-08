@@ -2,8 +2,11 @@
 # ACiDiC_SPUNk :: DiGiTAL_SEDiTiON :: v2408
 # Free of copyright; do what the funk you want with this.  That also means I provide no support, and any use of this is on you.
 # -----------------------------------------------------------------------------------------------------------------------------
-# SHOULDN'T NEED TO GO POKING IN THE BELOW, EH.
-# ...but don't run it blindly; check it over.
+# Please see https://github.com/digital-sedition for an up-to-date version and instructions.
+# I didn't create a repo just for this tiny script, so it'll be in a repo for some overly-expensive and sexy hardware sampler.
+# -----------------------------------------------------------------------------------------------------------------------------
+# YOU SHOULDN'T NEED TO GO POKING IN THE BELOW, EH.
+# ...but don't run it blindly; check it over.  It's easy to follow.
 # -----------------------------------------------------------------------------------------------------------------------------
 
 Write-Host ""

@@ -2,24 +2,7 @@
 # ACiDiC_SPUNk :: DiGiTAL_SEDiTiON :: v2408
 # Free of copyright; do what the funk you want with this.  That also means I provide no support, and any use of this is on you.
 # -----------------------------------------------------------------------------------------------------------------------------
-# This script is to make it easy to build a library of samples to import to another device in a given quality, and all named in
-# a cleaner way.  Any file the process finds that is a lower sample-rate, bit-rate, or channel count than you've asked for it
-# will leave at its original value, rather than upscale needlessly.  Folder structure will match the source structure, except
-# all folders and output file-names will be made upper-case, have any non-ASCII removed, and generally more device-friendly.
-# -----------------------------------------------------------------------------------------------------------------------------
-# Change the first two variables to be the location of your ffmpeg and ffprobe applications.  The script ensures it can find
-# them by path, so you'll have to be explicit.  These won't be included if you found this in a public repo of mine.
-#
-# The next line is calling the support file for the processing function itself; I split it so I could have an import script per
-# device.  If you've not put this file alongside this script, then please let this script know where the frick it is.
-#
-# The lines after that?  That's for you to call 'Sound-Import-Conversion'.  You'll need to provide it the follow parameters:
-#   - Source path for files to process; can be relative to script.
-#   - Destination path for processed files; can also be relative.
-#   - $true if output files should be mono / $false if output files are stereo.
-#   - Either 8, 16, or 24 - denoting the bit rate of the output files.
-#   - Either 22050, 44100, or 44800 - denoting the sample rate.
-#   - The last parameter is optional: set to $true if you want the script to automatically create the destination folder.
+# Please see https://github.com/digital-sedition/M8-MATE for an up-to-date version and instructions.
 # -----------------------------------------------------------------------------------------------------------------------------
 $gFFE = (Get-Location).Path + "/ffmpeg.exe"
 $gFFP = (Get-Location).Path + "/ffprobe.exe"
